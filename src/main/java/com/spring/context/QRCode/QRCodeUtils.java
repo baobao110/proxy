@@ -275,14 +275,16 @@ public class QRCodeUtils {
     }
 
     public static void main(String[] args){
-        String text = "1234567890";  //这里设置自定义网站url
+        /*String text = "1234567890";  //这里设置自定义网站url
         String logoPath = "E:\\pic\\b.jpg";
         String destPath = "E:\\pic\\";
         try{
             System.out.println(QRCodeUtils.encode(text, logoPath, destPath, true));
         }catch (Exception e){
             e.printStackTrace();
-        }
+        }*/
+
+        System.out.println(3*0.1);
 
     }
 

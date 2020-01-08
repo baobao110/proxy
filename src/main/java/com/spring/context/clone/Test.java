@@ -12,7 +12,7 @@ public class Test {
 
 
     public static void main(String[] args) {
-       Person person = new Person();
+      /* Person person = new Person();
 
         person.setAge(11);
 
@@ -29,13 +29,35 @@ public class Test {
 
         System.out.println(p.toString());
 
-
         System.out.print("person:p=");
         System.out.println(person==p);
 
 
         System.out.print("class=");
         System.out.println(person.getClass()==p.getClass());
+
+
+        System.out.println("====UnCloneA=======change======");
+
+        person.unCloneA.doublevalue();
+
+        System.out.println(person.unCloneA);
+
+        System.out.println(p.unCloneA);*/
+
+     Child child=new Child(11,"11");
+      Child ch=null;
+      try{
+          ch=(Child)child.deepClone();
+      }catch (Exception e){
+          e.printStackTrace();
+      }
+      System.out.println(child.unCloneA);
+      System.out.println(ch.unCloneA);
+      System.out.println("====UnCloneA=======change======");
+      child.unCloneA.doublevalue();
+      System.out.println(child.unCloneA);
+      System.out.println(ch.unCloneA);
 
     }
 

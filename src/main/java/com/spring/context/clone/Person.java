@@ -1,14 +1,13 @@
-package com.spring.context.clone;/**
- * @description:
- * @author: Lenovo
- * @date: 2019-11-21 10:26
- */
-
+package com.spring.context.clone;
 /**
  * @Auther chenhao
  * @Date 2019/11/21
+ * @Descp:浅拷贝  注意 unCloneA 指向同一个内存空间
  */
+
 public class Person implements  Cloneable {
+
+    public UnCloneA unCloneA=new UnCloneA(11);
 
     private int age;
 
