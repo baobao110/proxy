@@ -14,12 +14,15 @@ public class FinallTest {
     public static void main(String[] args) {
         int m=finall();
         System.out.println(m);
+        byte a=127;
+        byte b=127;
+        a+=b;
+        System.out.println(a);
     }
 
 
     private static int finall(){
         try{
-            int i=1/0;
            return 0;
         }catch (Exception e){
             e.printStackTrace();

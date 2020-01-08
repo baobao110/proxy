@@ -12,13 +12,14 @@ public class Test {
 
 
     public static void main(String[] args) {
-     /*  Person person = new Person();
+       Person person = new Person();
 
         person.setAge(11);
 
         person.setName("12121");
 
         Person p=(Person) person.clone();
+        p.setAge(22);
 
         System.out.println("=====person============");
 
@@ -35,7 +36,6 @@ public class Test {
 
         System.out.print("class=");
         System.out.println(person.getClass()==p.getClass());
-*/
 
     }
 
